@@ -1,0 +1,10 @@
+input,label{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom:5px; 
+
+}
+button{
+    margin-top: 10px;
+}
