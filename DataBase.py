@@ -7,8 +7,8 @@ class DataBase:
 
     def get_database(self):
         db = self.client.biblioteca
-        return list(db.libro.find())
-    
+        return list(db.libro.find({},{"_id": 0}))
+         
     def ingresar(self,isbn,titulo,autor,fecha,editorial,precio):
         db = self.client.biblioteca
         db.libro.insert_one({"isbn":isbn,"titulo":titulo,"autor":autor,"fecha":fecha,"editorial":editorial,"precio":precio})
