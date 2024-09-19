@@ -1,12 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Hola</h1>
-  </body>
-</html>
+
+{% extends "components/layout.html" %} 
+
+{% block title %}Home{% endblock %} 
+{% block content %}
+
+<div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+  <table class="table table-bordered table-striped" id = 'dataTable'>
+    <thead>
+      <tr>
+        <th>ISBN</th>
+        <th>Titulo</th>
+        <th>Autor</th>
+        <th>Fecha de Publicacion</th>
+        <th>Editorial</th>
+        <th>Precio</th>
+
+      </tr>
+    </thead>
+    <tbody id="data">
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}
