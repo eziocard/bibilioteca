@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-let URL = 'http://127.0.0.1:8000/mostrar_libros';
+let URL = '/mostrar_libros';
 
 fetch(URL)
     .then(res => res.json())
